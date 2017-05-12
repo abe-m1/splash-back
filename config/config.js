@@ -1,4 +1,5 @@
 const db = require('./database.js')
+const dev = require('./dev.js')
 const port = 5000
 
 function init(app){
@@ -8,6 +9,7 @@ function init(app){
 const config = {
     init: init,    
     port: port,
+    db: dev
    
 }
 
