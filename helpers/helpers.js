@@ -1,5 +1,6 @@
 var print = require('./printRoutes')
 var fs = require('fs')
+const nodeMailer = require('nodemailer')
 
 function reqDir(dir) {
     // Grab the name of the directory to not include it's main file
