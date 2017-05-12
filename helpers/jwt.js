@@ -5,3 +5,7 @@ function verifyJwt(token){
     return jwt.verify(token, secret)
 
 }
+
+function signJwt(data) {
+    return jwt.sign(data, secret)
+}
