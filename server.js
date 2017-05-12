@@ -3,7 +3,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const http = require('http')
 
-cons routes = require('./routes')
+const routes = require('./routes')
 const config = require('./config/')
 const helpers = require('./helpers')
 const middleware = require('./middleware')
