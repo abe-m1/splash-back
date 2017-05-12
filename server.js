@@ -11,6 +11,8 @@ const app = express();
 
 middleware.init(app)
 config.init(app)
+apiRouter = routes.init(app)
+helpers.printRoutes(apiRouter.stack, 'Router', apiRouter.mountPath)
 
 //server setup
 const port = process.env.PORT || config.port
