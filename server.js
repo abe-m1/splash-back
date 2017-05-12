@@ -8,7 +8,7 @@ const helpers = require('./helpers')
 const middleware = require('./middleware')
 var app = express();
 
-
+middleware.init(app)
 config.init(app)
 
 //server setup
