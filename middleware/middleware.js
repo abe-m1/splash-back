@@ -1,5 +1,5 @@
-var logger = require('morgan');
-var bodyParser = require('body-parser');
+const logger = require('morgan');
+const bodyParser = require('body-parser');
 const cors = require('cors')
 
 
