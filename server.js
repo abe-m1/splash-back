@@ -7,6 +7,8 @@ var config = require('./config/')
 var app = express();
 
 
+config.init(app)
+
 //server setup
 const port = process.env.PORT || config.port
 
