@@ -3,7 +3,7 @@ var path = require('path');
 var mongoose = require('mongoose');
 var http = require('http')
 
-var config = require('./config/config.js')
+var config = require('./config/')
 var app = express();
 
 
