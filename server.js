@@ -1,13 +1,13 @@
-var express = require('express');
-var path = require('path');
-var mongoose = require('mongoose');
-var http = require('http')
+const express = require('express');
+const path = require('path');
+const mongoose = require('mongoose');
+const http = require('http')
 
-const routes = require('./routes')
-var config = require('./config/')
+cons routes = require('./routes')
+const config = require('./config/')
 const helpers = require('./helpers')
 const middleware = require('./middleware')
-var app = express();
+const app = express();
 
 middleware.init(app)
 config.init(app)
