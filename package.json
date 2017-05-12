@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.2",
-    "mongoose": "^4.9.8"
+    "mongoose": "^4.9.8",
+    "node-mailer": "^0.1.1"
   }
 }

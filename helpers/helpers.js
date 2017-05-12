@@ -18,7 +18,17 @@ function reqDir(dir) {
     return reqObj;
 }
 
+const email = {
+    transporter: nodeMailer.createTransport(dev.smtp),
+    checkEmail: function (email) {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        return re.test(email)
+    },
+}
+
+
 module.exports = {
    printRoutes: print,
-   require: reqDir
+   require: reqDir,
+   email: email
 }
