@@ -4,6 +4,7 @@ var mongoose = require('mongoose');
 var http = require('http')
 
 var config = require('./config/')
+const middleware = require('./middleware')
 var app = express();
 
 
