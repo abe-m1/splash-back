@@ -1,5 +1,5 @@
-var print = require('./printRoutes')
-var fs = require('fs')
+const print = require('./printRoutes')
+const  fs = require('fs')
 const nodeMailer = require('nodemailer')
 const dev = require('../config/dev.js')
 
