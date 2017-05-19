@@ -6,7 +6,9 @@ function init(Router) {
     
     Router.route('/user') 
         .get(userController.getAllUsers)
-    
+
+    Router.route('/user/:id')
+        .get(userController.getOneUser)    
  }
 
 module.exports.init = init
