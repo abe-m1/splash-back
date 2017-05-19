@@ -28,6 +28,6 @@ const getAllUsers = (req, res, next)=> {
 
 
 module.exports = {
-   routeTest: test
+   routeTest: test,
    getAllUsers: getAllUsers
 }
