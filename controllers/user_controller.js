@@ -10,5 +10,5 @@ const test  = (req, res, next) => {
 }
 
 module.exports = {
-   test: test
+   routeTest: test
 }
